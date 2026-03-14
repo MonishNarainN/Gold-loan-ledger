@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Gold Loan Management System Design System */
+
+@layer base {
+  :root {
+    /* Base colors - Premium financial theme */
+    --background: 0 0% 100%;
+    --foreground: 220 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 15%;
+
+    /* Primary - Rich Gold */
+    --primary: 43 96% 56%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 43 100% 50%;
+
+    /* Secondary - Deep Blue */
+    --secondary: 220 60% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted - Light grays */
+    --muted: 220 13% 96%;
+    --muted-foreground: 220 10% 40%;
+
+    /* Accent - Warm gold */
+    --accent: 45 90% 60%;
+    --accent-foreground: 220 20% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 43 96% 56%;
+
+    /* Custom tokens for the app */
+    --gold-light: 45 100% 85%;
+    --gold-dark: 43 80% 40%;
+    --blue-light: 220 60% 50%;
+    --blue-dark: 220 80% 15%;
+    
+    /* Gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(43 96% 56%), hsl(45 90% 60%));
+    --gradient-blue: linear-gradient(135deg, hsl(220 60% 20%), hsl(220 80% 15%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 60% 20%) 0%, hsl(43 96% 56%) 100%);
+    
+    /* Shadows */
+    --shadow-gold: 0 10px 30px -10px hsl(43 96% 56% / 0.3);
+    --shadow-card: 0 4px 20px -2px hsl(220 20% 15% / 0.1);
+    --shadow-elegant: 0 20px 40px -10px hsl(220 20% 15% / 0.15);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 20% 15%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 20% 15%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 20% 15%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 43 96% 56%;
+    --primary-foreground: 220 20% 15%;
+    --primary-hover: 43 100% 50%;
+
+    --secondary: 220 15% 25%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 220 15% 25%;
+    --muted-foreground: 220 10% 60%;
+
+    --accent: 45 90% 60%;
+    --accent-foreground: 220 20% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 220 15% 25%;
+    --input: 220 15% 25%;
+    --ring: 43 96% 56%;
+
+    --gold-light: 45 100% 85%;
+    --gold-dark: 43 60% 30%;
+    --blue-light: 220 60% 70%;
+    --blue-dark: 220 80% 15%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
